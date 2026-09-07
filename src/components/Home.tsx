@@ -12,7 +12,7 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <section className="home-campaign relative isolate flex min-h-[calc(100vh-5.5rem)] w-full items-center overflow-hidden">
+    <section className="home-campaign relative isolate flex min-h-[calc(40vh-5.5rem)] w-full items-center overflow-hidden">
       <div className="home-campaign__bg" aria-hidden="true" />
       <div className="home-campaign__wash" aria-hidden="true" />
 
