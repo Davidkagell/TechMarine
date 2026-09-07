@@ -18,6 +18,7 @@
   --color-textColor: var(--textColor);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-syne);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,12 +34,13 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
-.home-campaign {
-  --font-campaign: var(--font-campaign-display), var(--font-geist-sans), sans-serif;
+h1,
+h2{
+  font-family: var(--font-syne), var(--font-geist-sans), sans-serif;
 }
 
-.home-campaign__display {
-  font-family: var(--font-campaign);
+.home-campaign__brand {
+  font-family: var(--font-syne), var(--font-geist-sans), sans-serif;
 }
 
 .home-campaign__bg {

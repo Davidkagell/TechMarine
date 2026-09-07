@@ -17,10 +17,10 @@ export default function Home() {
       <div className="home-campaign__wash" aria-hidden="true" />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-16 sm:px-10">
-        <p className="home-campaign__brand home-campaign__display text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+        <p className="home-campaign__brand text-5xl font-semibold tracking-tight text-white sm:text-7xl">
           {t("brand")}
         </p>
-        <h1 className="home-campaign__title home-campaign__display mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-(--campaign-accent) sm:text-4xl">
+        <h1 className="home-campaign__title mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-(--campaign-accent) sm:text-4xl">
           {t("campaignTitle")}
         </h1>
         <p className="home-campaign__lead mt-4 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl">
