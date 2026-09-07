@@ -4,6 +4,12 @@
   --background: #ffffff;
   --foreground: #171717;
   --textColor: rgb(56, 175, 27);
+  --campaign-deep: #0b2a32;
+  --campaign-mid: #163f4a;
+  --campaign-fog: #7a9aa3;
+  --campaign-accent: #e8b86d;
+  --campaign-cta: #8b1e2d;
+  --campaign-cta-hover: #a5283a;
 }
 
 @theme inline {
@@ -18,12 +24,108 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.home-campaign {
+  --font-campaign: var(--font-campaign-display), var(--font-geist-sans), sans-serif;
+}
+
+.home-campaign__display {
+  font-family: var(--font-campaign);
+}
+
+.home-campaign__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 70% at 78% 35%, rgba(232, 184, 109, 0.28), transparent 55%),
+    radial-gradient(ellipse 70% 55% at 12% 80%, rgba(122, 154, 163, 0.35), transparent 50%),
+    linear-gradient(165deg, var(--campaign-deep) 0%, var(--campaign-mid) 48%, #0a1c22 100%);
+  animation: home-campaign-drift 18s ease-in-out infinite alternate;
+}
+
+.home-campaign__wash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8, 24, 30, 0.82) 0%, rgba(8, 24, 30, 0.45) 55%, rgba(8, 24, 30, 0.2) 100%),
+    repeating-linear-gradient(
+      -12deg,
+      transparent,
+      transparent 18px,
+      rgba(255, 255, 255, 0.015) 18px,
+      rgba(255, 255, 255, 0.015) 19px
+    );
+  pointer-events: none;
+}
+
+.home-campaign__brand,
+.home-campaign__title,
+.home-campaign__lead,
+.home-campaign__ctas {
+  animation: home-campaign-rise 0.8s ease-out both;
+}
+
+.home-campaign__title {
+  animation-delay: 0.12s;
+}
+
+.home-campaign__lead {
+  animation-delay: 0.22s;
+}
+
+.home-campaign__ctas {
+  animation-delay: 0.34s;
+}
+
+.home-campaign__btn-primary {
+  animation: home-campaign-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes home-campaign-drift {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.06) translate3d(-1.5%, 1%, 0);
+  }
+}
+
+@keyframes home-campaign-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes home-campaign-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 30, 45, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(139, 30, 45, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-campaign__bg,
+  .home-campaign__brand,
+  .home-campaign__title,
+  .home-campaign__lead,
+  .home-campaign__ctas,
+  .home-campaign__btn-primary {
+    animation: none;
+  }
 }

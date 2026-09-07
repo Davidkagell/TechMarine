@@ -36,5 +36,15 @@
     "lead": "Vi säljer högkvalitativa båtdelar som ska hålla länge och anpassat för marinmiljön – och svarar när du behöver hjälp att välja rätt.",
     "story": "Davids båtdelar är en liten butik för folk som faktiskt är ute på sjön. Sortimentet är medvetet smalt: ankare, propellrar, tampar, lanternor, pumpar och lite elektronik. Hellre rätt del i lager än hyllmeter med sådant ingen frågar efter.",
     "help": "Osäker på vad som passar din båt? Fråga chatten nere till höger. Den känner till vårt sortiment och gissar inte."
+  },
+  "home": {
+    "brand": "Tech Marine",
+    "campaignTitle": "Höstkampanj",
+    "campaignLead": "Allt du behöver inför vinterförvaringen av båten. Till riktigt bra priser!",
+    "ctaOil": "Motorolja",
+    "ctaFilters": "Oljefilter",
+    "ctaPumps": "Pumpar",
+    "ctaRope": "Tampar",
+    "ctaCampaign": "Se hela kampanjen"
   }
 }
