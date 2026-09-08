@@ -49,14 +49,14 @@ export default function ProductCard({
       <div className="flex flex-1 flex-col gap-2 p-4">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-base font-semibold leading-snug">{name}</h3>
-          <p className="shrink-0 font-medium text-textColor">{priceLabel}</p>
+          <p className="shrink-0 font-medium text-price-color">{priceLabel}</p>
         </div>
         <p className="text-xs text-zinc-500 dark:text-zinc-400">{articleLabel}</p>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {description}
         </p>
         <p
-          className={`mt-auto pt-2 text-sm ${quantity > 0 ? "text-textColor" : "text-zinc-500"}`}
+          className={`mt-auto pt-2 text-sm ${quantity > 0 ? "text-price-color" : "text-zinc-500"}`}
         >
           {quantity > 0 ? inStockLabel : outOfStockLabel}
         </p>

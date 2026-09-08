@@ -149,10 +149,10 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
   }
 
   return (
-    <div className="flex h-full min-h-0 flex-col overflow-hidden bg-purple-900">
-      <header className="flex shrink-0 items-start justify-between gap-3 border-b border-foreground/10 px-4 py-3">
+    <div className="flex h-full min-h-0 flex-col overflow-hidden">
+      <header className="flex shrink-0 items-start justify-between gap-3 border-b border-white/15 bg-tech-marine-dark-blue px-4 py-3">
         <div className="min-w-0 space-y-1">
-          <h1 className="text-lg font-semibold tracking-tight text-textColor">
+          <h1 className="text-lg font-semibold tracking-tight text-white">
             {t("common.title")}
           </h1>
         </div>
@@ -160,7 +160,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
           type="button"
           onClick={onClose}
           aria-label={t("common.closeChat")}
-          className="flex size-8 shrink-0 items-center justify-center rounded-full text-lg leading-none text-textColor/70 transition hover:bg-foreground/10 hover:text-textColor"
+          className="flex size-8 shrink-0 items-center justify-center rounded-full text-lg leading-none text-white/70 transition hover:bg-white/15 hover:text-white"
         >
           ×
         </button>
@@ -176,7 +176,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
           className="mx-auto flex w-full max-w-2xl flex-col gap-4"
         >
           {messages.length === 0 && (
-            <div className="rounded-xl border border-dashed border-purple-400/10 bg-purple-700 px-4 py-5 text-center text-sm text-textColor">
+            <div className="rounded-xl border border-dashed border-purple-400/10 bg-tech-marine-light-blue px-4 py-5 text-center text-sm text-black">
               {t("common.empty")}
             </div>
           )}
@@ -203,18 +203,18 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
                   className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
                     isUser
                       ? "bg-foreground text-background"
-                      : "border border-foreground/10 bg-foreground/3 text-textColor"
+                      : "border border-foreground/10 bg-foreground/3 text-price-color"
                   }`}
                 >
                   {!isUser && (
-                    <p className="mb-1 text-xs font-medium text-textColor/60">
+                    <p className="mb-1 text-xs font-medium text-price-color/60">
                       {t("common.assistantLabel")}
                     </p>
                   )}
                   {text ? (
                     <span>{renderTextWithLinks(text)}</span>
                   ) : (
-                    <span className="text-textColor/40">...</span>
+                    <span className="text-price-color/40">...</span>
                   )}
                 </div>
               </div>
@@ -223,8 +223,8 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
 
           {showGenerating ? (
             <div className="flex justify-start">
-              <div className="max-w-[85%] rounded-2xl border border-foreground/10 bg-foreground/3 px-4 py-3 text-sm leading-relaxed text-textColor">
-                <span className="text-textColor/40">
+              <div className="max-w-[85%] rounded-2xl border border-foreground/10 bg-foreground/3 px-4 py-3 text-sm leading-relaxed text-price-color">
+                <span className="text-price-color/40">
                   {t("common.generating")}
                 </span>
               </div>
@@ -259,7 +259,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
             <button
               type="button"
               onClick={() => stop()}
-              className="rounded-2xl border border-foreground/15 px-4 py-3 text-sm font-medium text-textColor transition hover:bg-foreground/5"
+              className="rounded-2xl border border-foreground/15 px-4 py-3 text-sm font-medium text-price-color transition hover:bg-foreground/5"
             >
               {t("common.stop")}
             </button>
@@ -273,7 +273,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
             </button>
           )}
         </div>
-        <p className="mx-auto mt-2 max-w-2xl text-xs text-textColor/80">
+        <p className="mx-auto mt-2 max-w-2xl text-xs text-price-color/80">
           {t("common.maxLength", { max: MAX_MESSAGE_LENGTH })}
         </p>
       </form>

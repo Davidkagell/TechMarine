@@ -113,14 +113,14 @@ export function ProductCardItem({
         <div className="mt-1 flex items-baseline justify-between gap-4">
           <h1 className="text-2xl font-semibold tracking-tight">{name}</h1>
         </div>
-          <p className="shrink-0 text-xl font-semibold text-textColor">
+          <p className="shrink-0 text-xl font-semibold text-price-color">
             {priceLabel}
           </p>
         <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           {description}
         </p>
         <p
-          className={`mt-6 text-sm font-medium ${inStock ? "text-textColor" : "text-zinc-500 dark:text-zinc-400"}`}
+          className={`mt-6 text-sm font-medium ${inStock ? "text-price-color" : "text-zinc-500 dark:text-zinc-400"}`}
         >
           {inStock ? inStockLabel : outOfStockLabel}
         </p>

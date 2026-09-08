@@ -112,7 +112,7 @@ export default function HeaderSearch() {
               setOpen(false);
             }
           }}
-          className="h-10 w-full rounded-lg border border-black/15 bg-background pr-3 pl-9 text-sm outline-none placeholder:text-foreground/40 focus:border-textColor dark:border-white/20"
+          className="h-10 w-full rounded-lg border border-black/15 bg-background pr-3 pl-9 text-sm outline-none placeholder:text-foreground/40 focus:border-price-color dark:border-white/20"
         />
       </div>
 

@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --textColor: rgb(56, 175, 27);
+  --price-color: rgb(56, 175, 27);
   --campaign-deep: #0b2a32;
   --campaign-mid: #163f4a;
   --campaign-fog: #7a9aa3;
@@ -15,7 +15,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-textColor: var(--textColor);
+  --color-price-color: var(--price-color);
+  --color-tech-marine-light-blue: #bfdbfe;
+  --color-tech-marine-dark-blue: #2563eb;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-syne);

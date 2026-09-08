@@ -19,7 +19,7 @@ export default function Products() {
       <h1 className="text-2xl font-semibold">{t("productsPage.title")}</h1>
       {groups.map((group) => (
         <section key={group.category} className="mt-10">
-          <h2 className="mb-4 text-lg font-semibold text-textColor">
+          <h2 className="mb-4 text-lg font-semibold text-price-color">
             {group.category}
           </h2>
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -60,7 +60,7 @@ export function SearchPanel({
               <span>
                 {product.manufacturer} · {product.articleNumber}
               </span>
-              <span className="shrink-0 text-textColor">
+              <span className="shrink-0 text-price-color">
                 {formatPrice(locale, product.price, product.currency)}
               </span>
             </span>

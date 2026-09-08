@@ -8,7 +8,7 @@ export default function Header() {
   const t = useTranslations("nav");
 
   return (
-    <header className="flex sticky top-0 z-50 flex-row items-center justify-between gap-4 border-b-2 px-4 sm:px-10 bg-blue-200">
+    <header className="flex sticky top-0 z-50 flex-row items-center justify-between gap-4 border-b-2 px-4 sm:px-10 bg-tech-marine-light-blue">
       <div className="flex flex-row items-center justify-center gap-8">
 
       <Link href="/" className="shrink-0">

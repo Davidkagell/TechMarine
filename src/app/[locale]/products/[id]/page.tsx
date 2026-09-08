@@ -39,7 +39,7 @@ export default async function ProductDetailPage({
     <main className="mx-auto w-full max-w-6xl px-10 py-6 pb-24">
       <Link
         href="/products"
-        className="mb-6 inline-block text-sm text-textColor/70 underline-offset-4 hover:underline"
+        className="mb-6 inline-block text-sm text-price-color/70 underline-offset-4 hover:underline"
       >
         {t("backToProducts")}
       </Link>
