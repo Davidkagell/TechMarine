@@ -56,6 +56,9 @@ export function SearchPanel({
             <span className="block text-sm font-medium leading-snug">
               {product.name}
             </span>
+            <span className="mt-0.5 block text-xs text-foreground/50">
+              {product.categoryPath ?? product.category}
+            </span>
             <span className="mt-0.5 flex items-center justify-between gap-2 text-xs text-foreground/55">
               <span>
                 {product.manufacturer} · {product.articleNumber}

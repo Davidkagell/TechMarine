@@ -1,0 +1,80 @@
+[
+  {
+    "id": "fortojning",
+    "parentId": null,
+    "slug": "fortojning",
+    "name": { "sv": "Förtöjning & ankring", "en": "Mooring & anchoring" }
+  },
+  {
+    "id": "ankare",
+    "parentId": "fortojning",
+    "slug": "ankare",
+    "name": { "sv": "Ankare", "en": "Anchors" }
+  },
+  {
+    "id": "tampar",
+    "parentId": "fortojning",
+    "slug": "tampar",
+    "name": { "sv": "Tampar", "en": "Ropes" }
+  },
+  {
+    "id": "sakerhet-fendrar",
+    "parentId": "fortojning",
+    "slug": "sakerhet-fendrar",
+    "name": { "sv": "Säkerhet & fendrar", "en": "Safety & fenders" }
+  },
+  {
+    "id": "motor",
+    "parentId": null,
+    "slug": "motor",
+    "name": { "sv": "Motor & drift", "en": "Engine & propulsion" }
+  },
+  {
+    "id": "propellrar",
+    "parentId": "motor",
+    "slug": "propellrar",
+    "name": { "sv": "Propellrar", "en": "Propellers" }
+  },
+  {
+    "id": "motorolja",
+    "parentId": "motor",
+    "slug": "motorolja",
+    "name": { "sv": "Motorolja", "en": "Engine oils" }
+  },
+  {
+    "id": "oljefilter",
+    "parentId": "motor",
+    "slug": "oljefilter",
+    "name": { "sv": "Oljefilter", "en": "Oil filters" }
+  },
+  {
+    "id": "kylvatska",
+    "parentId": "motor",
+    "slug": "kylvatska",
+    "name": { "sv": "Kylvätska", "en": "Coolants" }
+  },
+  {
+    "id": "elsystem",
+    "parentId": null,
+    "slug": "elsystem",
+    "name": { "sv": "Elsystem & ombord", "en": "Electrical & onboard" }
+  },
+  {
+    "id": "lanternor",
+    "parentId": "elsystem",
+    "slug": "lanternor",
+    "name": { "sv": "Lanternor", "en": "Navigation lights" }
+  },
+  {
+    "id": "elektronik",
+    "parentId": "elsystem",
+    "slug": "elektronik",
+    "name": { "sv": "Elektronik", "en": "Electronics" }
+  },
+  {
+    "id": "pumpar",
+    "parentId": "elsystem",
+    "slug": "pumpar",
+    "name": { "sv": "Pumpar", "en": "Pumps" }
+  }
+]

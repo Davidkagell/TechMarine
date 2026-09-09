@@ -1,8 +1,12 @@
 import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ProductCardItem } from "@/components/ProductCardItem";
-import { Link } from "@/i18n/navigation";
+import {
+  categoryHref,
+  getCategoryChain,
+} from "@/lib/categories";
 import { routing } from "@/i18n/routing";
 import {
   formatProductPrice,
@@ -34,15 +38,21 @@ export default async function ProductDetailPage({
   }
 
   const t = await getTranslations({ locale, namespace: "productsPage" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const chain = getCategoryChain(product.categoryId);
+
+  const breadcrumbs = [
+    { label: tNav("products"), href: "/products" },
+    ...chain.map((node) => ({
+      label: node.name[locale],
+      href: categoryHref(node.id),
+    })),
+    { label: product.name[locale] },
+  ];
 
   return (
     <main className="mx-auto w-full max-w-6xl px-10 py-6 pb-24">
-      <Link
-        href="/products"
-        className="mb-6 inline-block text-sm text-price-color/70 underline-offset-4 hover:underline"
-      >
-        {t("backToProducts")}
-      </Link>
+      <Breadcrumbs items={breadcrumbs} />
       <ProductCardItem
         name={product.name[locale]}
         articleLabel={t("articleNumber", {

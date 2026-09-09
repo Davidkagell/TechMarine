@@ -2,10 +2,10 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const secondaryLinks = [
-  { href: "/products", labelKey: "ctaOil" as const },
-  { href: "/products", labelKey: "ctaFilters" as const },
-  { href: "/products", labelKey: "ctaPumps" as const },
-  { href: "/products", labelKey: "ctaRope" as const },
+  { href: "/c/motor/motorolja", labelKey: "ctaOil" as const },
+  { href: "/c/motor/oljefilter", labelKey: "ctaFilters" as const },
+  { href: "/c/elsystem/pumpar", labelKey: "ctaPumps" as const },
+  { href: "/c/fortojning/tampar", labelKey: "ctaRope" as const },
 ];
 
 export default function Home() {

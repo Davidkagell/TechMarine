@@ -7,7 +7,7 @@ export type Product = {
   id: string;
   manufacturer: string;
   articleNumber: string;
-  category: LocalizedText;
+  categoryId: string;
   name: LocalizedText;
   description: LocalizedText;
   images: string[];
@@ -23,6 +23,7 @@ export type ProductSearchResult = {
   manufacturer: string;
   articleNumber: string;
   category: string;
+  categoryPath?: string;
   price: number;
   currency: string;
   inStock: boolean;

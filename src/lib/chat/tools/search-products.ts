@@ -6,7 +6,7 @@ import { searchProducts } from "@/lib/products";
 export function createSearchProductsTool(locale: Locale) {
   return tool({
     description:
-      "Search the store catalog by name, manufacturer, article number, category, or keywords. Use for questions about availability, price, stock, part numbers, or where to find items on the website.",
+      "Search the store catalog by name, manufacturer, article number, category path (e.g. Förtöjning › Ankare), or keywords. Use for questions about availability, price, stock, part numbers, or where to find items on the website.",
     inputSchema: z.object({
       query: z
         .string()

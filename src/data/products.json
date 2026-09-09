@@ -3,10 +3,6 @@
     "id": "anchor-plough-5kg",
     "manufacturer": "Lewmar",
     "articleNumber": "0057406",
-    "category": {
-      "sv": "Ankare",
-      "en": "Anchors"
-    },
     "name": {
       "sv": "Lewmar Delta 6 kg",
       "en": "Lewmar Delta 6 kg"
@@ -21,16 +17,13 @@
     "price": 899,
     "currency": "SEK",
     "quantity": 12,
-    "inStock": true
+    "inStock": true,
+    "categoryId": "ankare"
   },
   {
     "id": "anchor-plough-10kg",
     "manufacturer": "Lewmar",
     "articleNumber": "0057410",
-    "category": {
-      "sv": "Ankare",
-      "en": "Anchors"
-    },
     "name": {
       "sv": "Lewmar Delta 10 kg",
       "en": "Lewmar Delta 10 kg"
@@ -47,16 +40,13 @@
       "/images/products/anchor-plough-10kg.jpg",
       "/images/products/anchor-plough-10kg.jpg",
       "/images/products/anchor-plough-10kg.jpg"
-    ]
+    ],
+    "categoryId": "ankare"
   },
   {
     "id": "anchor-bruce-7-5kg",
     "manufacturer": "Lewmar",
     "articleNumber": "0057907",
-    "category": {
-      "sv": "Ankare",
-      "en": "Anchors"
-    },
     "name": {
       "sv": "Lewmar Claw 7,5 kg",
       "en": "Lewmar Claw 7.5 kg"
@@ -71,16 +61,13 @@
     "inStock": false,
     "images": [
       "/images/products/anchor-bruce-7-5kg.jpg"
-    ]
+    ],
+    "categoryId": "ankare"
   },
   {
     "id": "anchor-chain-8mm-20m",
     "manufacturer": "Osculati",
     "articleNumber": "01.376.08",
-    "category": {
-      "sv": "Ankare",
-      "en": "Anchors"
-    },
     "name": {
       "sv": "Ankarkätting 8 mm, 20 m",
       "en": "Anchor chain 8 mm, 20 m"
@@ -95,16 +82,13 @@
     "inStock": true,
     "images": [
       "/images/products/anchor-chain-8mm-20m.jpg"
-    ]
+    ],
+    "categoryId": "ankare"
   },
   {
     "id": "prop-aluminium-13x19",
     "manufacturer": "Solas",
     "articleNumber": "3411-130-19",
-    "category": {
-      "sv": "Propellrar",
-      "en": "Propellers"
-    },
     "name": {
       "sv": "Solas Amita 13x19 aluminium",
       "en": "Solas Amita 13x19 aluminium"
@@ -119,16 +103,13 @@
     "inStock": true,
     "images": [
       "/images/products/prop-aluminium-13x19.jpg"
-    ]
+    ],
+    "categoryId": "propellrar"
   },
   {
     "id": "prop-aluminium-14x21",
     "manufacturer": "Solas",
     "articleNumber": "1511-140-21",
-    "category": {
-      "sv": "Propellrar",
-      "en": "Propellers"
-    },
     "name": {
       "sv": "Solas Amita 14x21 aluminium",
       "en": "Solas Amita 14x21 aluminium"
@@ -143,16 +124,13 @@
     "inStock": true,
     "images": [
       "/images/products/prop-aluminium-14x21.jpg"
-    ]
+    ],
+    "categoryId": "propellrar"
   },
   {
     "id": "prop-stainless-13x19",
     "manufacturer": "Solas",
     "articleNumber": "3311-130-19",
-    "category": {
-      "sv": "Propellrar",
-      "en": "Propellers"
-    },
     "name": {
       "sv": "Solas Titan 13x19 rostfri",
       "en": "Solas Titan 13x19 stainless"
@@ -167,16 +145,13 @@
     "inStock": true,
     "images": [
       "/images/products/prop-stainless-13x19.jpg"
-    ]
+    ],
+    "categoryId": "propellrar"
   },
   {
     "id": "prop-hub-kit",
     "manufacturer": "Solas",
     "articleNumber": "8011-115-13",
-    "category": {
-      "sv": "Propellrar",
-      "en": "Propellers"
-    },
     "name": {
       "sv": "Navsats till propeller",
       "en": "Propeller hub kit"
@@ -191,16 +166,13 @@
     "inStock": true,
     "images": [
       "/images/products/prop-hub-kit.jpg"
-    ]
+    ],
+    "categoryId": "propellrar"
   },
   {
     "id": "rope-polyester-12mm-50m",
     "manufacturer": "Liros",
     "articleNumber": "01007-12",
-    "category": {
-      "sv": "Tampar",
-      "en": "Ropes"
-    },
     "name": {
       "sv": "Polyestertamp 12 mm, 50 m",
       "en": "Polyester rope 12 mm, 50 m"
@@ -215,16 +187,13 @@
     "inStock": true,
     "images": [
       "/images/products/rope-polyester-12mm-50m.jpg"
-    ]
+    ],
+    "categoryId": "tampar"
   },
   {
     "id": "rope-polyester-14mm-50m",
     "manufacturer": "Liros",
     "articleNumber": "01007-14",
-    "category": {
-      "sv": "Tampar",
-      "en": "Ropes"
-    },
     "name": {
       "sv": "Polyestertamp 14 mm, 50 m",
       "en": "Polyester rope 14 mm, 50 m"
@@ -239,16 +208,13 @@
     "inStock": true,
     "images": [
       "/images/products/rope-polyester-14mm-50m.jpg"
-    ]
+    ],
+    "categoryId": "tampar"
   },
   {
     "id": "rope-anchor-16mm-30m",
     "manufacturer": "Liros",
     "articleNumber": "00110-16",
-    "category": {
-      "sv": "Tampar",
-      "en": "Ropes"
-    },
     "name": {
       "sv": "Ankarlina 16 mm, 30 m",
       "en": "Anchor line 16 mm, 30 m"
@@ -263,16 +229,13 @@
     "inStock": true,
     "images": [
       "/images/products/rope-anchor-16mm-30m.jpg"
-    ]
+    ],
+    "categoryId": "tampar"
   },
   {
     "id": "fender-line-8mm-2m",
     "manufacturer": "Liros",
     "articleNumber": "00130-08",
-    "category": {
-      "sv": "Tampar",
-      "en": "Ropes"
-    },
     "name": {
       "sv": "Fendertamp 8 mm, 2 m (2-pack)",
       "en": "Fender line 8 mm, 2 m (2-pack)"
@@ -287,16 +250,13 @@
     "inStock": true,
     "images": [
       "/images/products/fender-line-8mm-2m.jpg"
-    ]
+    ],
+    "categoryId": "tampar"
   },
   {
     "id": "light-nav-led-tricolour",
     "manufacturer": "Aqua Signal",
     "articleNumber": "3856001000",
-    "category": {
-      "sv": "Lanternor",
-      "en": "Navigation lights"
-    },
     "name": {
       "sv": "Aqua Signal Series 34 LED tre-färg",
       "en": "Aqua Signal Series 34 LED tricolour"
@@ -311,16 +271,13 @@
     "inStock": true,
     "images": [
       "/images/products/light-nav-led-tricolour.jpg"
-    ]
+    ],
+    "categoryId": "lanternor"
   },
   {
     "id": "light-nav-port-starboard",
     "manufacturer": "Aqua Signal",
     "articleNumber": "3853001000 / 3852001000",
-    "category": {
-      "sv": "Lanternor",
-      "en": "Navigation lights"
-    },
     "name": {
       "sv": "Aqua Signal Series 34 LED babord/styrbord",
       "en": "Aqua Signal Series 34 LED port/starboard"
@@ -335,16 +292,13 @@
     "inStock": true,
     "images": [
       "/images/products/light-nav-port-starboard.jpg"
-    ]
+    ],
+    "categoryId": "lanternor"
   },
   {
     "id": "light-stern-led",
     "manufacturer": "Aqua Signal",
     "articleNumber": "3854001000",
-    "category": {
-      "sv": "Lanternor",
-      "en": "Navigation lights"
-    },
     "name": {
       "sv": "Aqua Signal Series 34 LED-akterlanterna",
       "en": "Aqua Signal Series 34 LED stern light"
@@ -359,16 +313,13 @@
     "inStock": false,
     "images": [
       "/images/products/light-stern-led.jpg"
-    ]
+    ],
+    "categoryId": "lanternor"
   },
   {
     "id": "light-anchor-led",
     "manufacturer": "Aqua Signal",
     "articleNumber": "3858001000",
-    "category": {
-      "sv": "Lanternor",
-      "en": "Navigation lights"
-    },
     "name": {
       "sv": "Aqua Signal Series 34 LED topp/ankarlanterna",
       "en": "Aqua Signal Series 34 LED masthead/anchor light"
@@ -383,16 +334,13 @@
     "inStock": true,
     "images": [
       "/images/products/light-anchor-led.jpg"
-    ]
+    ],
+    "categoryId": "lanternor"
   },
   {
     "id": "pump-bilge-12v-47l",
     "manufacturer": "Rule",
     "articleNumber": "RM800A",
-    "category": {
-      "sv": "Pumpar",
-      "en": "Pumps"
-    },
     "name": {
       "sv": "Rule-Mate 800 länspump 12 V",
       "en": "Rule-Mate 800 bilge pump 12 V"
@@ -407,16 +355,13 @@
     "inStock": true,
     "images": [
       "/images/products/pump-bilge-12v-47l.jpg"
-    ]
+    ],
+    "categoryId": "pumpar"
   },
   {
     "id": "pump-bilge-12v-76l",
     "manufacturer": "Rule",
     "articleNumber": "RM1100A",
-    "category": {
-      "sv": "Pumpar",
-      "en": "Pumps"
-    },
     "name": {
       "sv": "Rule-Mate 1100 länspump 12 V",
       "en": "Rule-Mate 1100 bilge pump 12 V"
@@ -431,16 +376,13 @@
     "inStock": true,
     "images": [
       "/images/products/pump-bilge-12v-76l.jpg"
-    ]
+    ],
+    "categoryId": "pumpar"
   },
   {
     "id": "pump-manual-diaphragm",
     "manufacturer": "Whale",
     "articleNumber": "BP9013",
-    "category": {
-      "sv": "Pumpar",
-      "en": "Pumps"
-    },
     "name": {
       "sv": "Whale Gusher Urchin membranpump",
       "en": "Whale Gusher Urchin diaphragm pump"
@@ -455,16 +397,13 @@
     "inStock": true,
     "images": [
       "/images/products/pump-manual-diaphragm.jpg"
-    ]
+    ],
+    "categoryId": "pumpar"
   },
   {
     "id": "pump-freshwater-12v",
     "manufacturer": "Jabsco",
     "articleNumber": "Q301J-118S-3A",
-    "category": {
-      "sv": "Pumpar",
-      "en": "Pumps"
-    },
     "name": {
       "sv": "Jabsco Par-Max 3 sötvattenpump 12 V",
       "en": "Jabsco Par-Max 3 freshwater pump 12 V"
@@ -479,16 +418,13 @@
     "inStock": true,
     "images": [
       "/images/products/pump-freshwater-12v.jpg"
-    ]
+    ],
+    "categoryId": "pumpar"
   },
   {
     "id": "elec-battery-switch",
     "manufacturer": "Blue Sea Systems",
     "articleNumber": "6006",
-    "category": {
-      "sv": "Elektronik",
-      "en": "Electronics"
-    },
     "name": {
       "sv": "Blue Sea m-Series huvudströmbrytare 300 A",
       "en": "Blue Sea m-Series battery switch 300 A"
@@ -503,16 +439,13 @@
     "inStock": true,
     "images": [
       "/images/products/elec-battery-switch.jpg"
-    ]
+    ],
+    "categoryId": "elektronik"
   },
   {
     "id": "elec-fuse-panel-6",
     "manufacturer": "Blue Sea Systems",
     "articleNumber": "5025",
-    "category": {
-      "sv": "Elektronik",
-      "en": "Electronics"
-    },
     "name": {
       "sv": "Blue Sea ST Blade säkringspanel 6 kretsar",
       "en": "Blue Sea ST Blade fuse panel 6 circuits"
@@ -527,16 +460,13 @@
     "inStock": true,
     "images": [
       "/images/products/elec-fuse-panel-6.jpg"
-    ]
+    ],
+    "categoryId": "elektronik"
   },
   {
     "id": "elec-usb-charger",
     "manufacturer": "Blue Sea Systems",
     "articleNumber": "1048",
-    "category": {
-      "sv": "Elektronik",
-      "en": "Electronics"
-    },
     "name": {
       "sv": "Blue Sea USB-laddare 12 V, USB-A/USB-C",
       "en": "Blue Sea USB charger 12 V, USB-A/USB-C"
@@ -551,16 +481,13 @@
     "inStock": true,
     "images": [
       "/images/products/elec-usb-charger.jpg"
-    ]
+    ],
+    "categoryId": "elektronik"
   },
   {
     "id": "elec-nav-display-7",
     "manufacturer": "Garmin",
     "articleNumber": "010-02365-00",
-    "category": {
-      "sv": "Elektronik",
-      "en": "Electronics"
-    },
     "name": {
       "sv": "Garmin GPSMAP 723, 7 tum",
       "en": "Garmin GPSMAP 723, 7 inch"
@@ -575,16 +502,13 @@
     "inStock": false,
     "images": [
       "/images/products/elec-nav-display-7.jpg"
-    ]
+    ],
+    "categoryId": "elektronik"
   },
   {
     "id": "safety-fender-20x60",
     "manufacturer": "Polyform",
     "articleNumber": "F-2",
-    "category": {
-      "sv": "Säkerhet & fendrar",
-      "en": "Safety & fenders"
-    },
     "name": {
       "sv": "Polyform F-2 fender 22 x 61 cm",
       "en": "Polyform F-2 fender 22 x 61 cm"
@@ -599,16 +523,13 @@
     "inStock": true,
     "images": [
       "/images/products/safety-fender-20x60.jpg"
-    ]
+    ],
+    "categoryId": "sakerhet-fendrar"
   },
   {
     "id": "safety-lifejacket-150n",
     "manufacturer": "Baltic",
     "articleNumber": "1585",
-    "category": {
-      "sv": "Säkerhet & fendrar",
-      "en": "Safety & fenders"
-    },
     "name": {
       "sv": "Baltic Winner flytväst 150 N, vuxen",
       "en": "Baltic Winner lifejacket 150 N, adult"
@@ -623,16 +544,13 @@
     "inStock": true,
     "images": [
       "/images/products/safety-lifejacket-150n.jpg"
-    ]
+    ],
+    "categoryId": "sakerhet-fendrar"
   },
   {
     "id": "safety-throwline-20m",
     "manufacturer": "Plastimo",
     "articleNumber": "36554",
-    "category": {
-      "sv": "Säkerhet & fendrar",
-      "en": "Safety & fenders"
-    },
     "name": {
       "sv": "Plastimo räddningslina 20 m",
       "en": "Plastimo throw line 20 m"
@@ -647,16 +565,13 @@
     "inStock": true,
     "images": [
       "/images/products/safety-throwline-20m.jpg"
-    ]
+    ],
+    "categoryId": "sakerhet-fendrar"
   },
   {
     "id": "glycol-propylene-4l",
     "manufacturer": "Star brite",
     "articleNumber": "31200",
-    "category": {
-      "sv": "Kylvätska",
-      "en": "Coolants"
-    },
     "name": {
       "sv": "Star brite Winter Safe glykol 3,8 l",
       "en": "Star brite Winter Safe glycol 3.8 L"
@@ -671,16 +586,13 @@
     "inStock": true,
     "images": [
       "/images/products/glycol-propylene-4l.jpg"
-    ]
+    ],
+    "categoryId": "kylvatska"
   },
   {
     "id": "oil-4stroke-10w30-4l",
     "manufacturer": "Yamaha",
     "articleNumber": "YMD-63050-04-00",
-    "category": {
-      "sv": "Motorolja",
-      "en": "Engine oils"
-    },
     "name": {
       "sv": "Yamalube 10W-30 4-takt, 4 l",
       "en": "Yamalube 10W-30 4-stroke, 4 L"
@@ -695,16 +607,13 @@
     "inStock": true,
     "images": [
       "/images/products/oil-4stroke-10w30-4l.jpg"
-    ]
+    ],
+    "categoryId": "motorolja"
   },
   {
     "id": "oil-2stroke-tcw3-1l",
     "manufacturer": "Yamaha",
     "articleNumber": "YMD-63021-01-A5",
-    "category": {
-      "sv": "Motorolja",
-      "en": "Engine oils"
-    },
     "name": {
       "sv": "Yamalube 2-M TC-W3, 1 l",
       "en": "Yamalube 2-M TC-W3, 1 L"
@@ -719,16 +628,13 @@
     "inStock": true,
     "images": [
       "/images/products/oil-2stroke-tcw3-1l.jpg"
-    ]
+    ],
+    "categoryId": "motorolja"
   },
   {
     "id": "oil-diesel-15w40-5l",
     "manufacturer": "Volvo Penta",
     "articleNumber": "23909454",
-    "category": {
-      "sv": "Motorolja",
-      "en": "Engine oils"
-    },
     "name": {
       "sv": "Volvo Penta VDS-3 15W-40, 5 l",
       "en": "Volvo Penta VDS-3 15W-40, 5 L"
@@ -743,16 +649,13 @@
     "inStock": true,
     "images": [
       "/images/products/oil-diesel-15w40-5l.jpg"
-    ]
+    ],
+    "categoryId": "motorolja"
   },
   {
     "id": "filter-outboard-4stroke",
     "manufacturer": "Yamaha",
     "articleNumber": "5GH-13440-90-00",
-    "category": {
-      "sv": "Oljefilter",
-      "en": "Oil filters"
-    },
     "name": {
       "sv": "Yamaha oljefilter 4-takts utombordare",
       "en": "Yamaha oil filter 4-stroke outboard"
@@ -767,16 +670,13 @@
     "inStock": true,
     "images": [
       "/images/products/filter-outboard-4stroke.jpg"
-    ]
+    ],
+    "categoryId": "oljefilter"
   },
   {
     "id": "filter-inboard-diesel",
     "manufacturer": "Volvo Penta",
     "articleNumber": "22030848",
-    "category": {
-      "sv": "Oljefilter",
-      "en": "Oil filters"
-    },
     "name": {
       "sv": "Volvo Penta oljefilter D4/D6",
       "en": "Volvo Penta oil filter D4/D6"
@@ -791,16 +691,13 @@
     "inStock": true,
     "images": [
       "/images/products/filter-inboard-diesel.jpg"
-    ]
+    ],
+    "categoryId": "oljefilter"
   },
   {
     "id": "filter-mercury-4stroke",
     "manufacturer": "Mercury",
     "articleNumber": "35-877761K01",
-    "category": {
-      "sv": "Oljefilter",
-      "en": "Oil filters"
-    },
     "name": {
       "sv": "Mercury oljefilter 4-takt 75–150 hk",
       "en": "Mercury oil filter 4-stroke 75–150 hp"
@@ -815,6 +712,7 @@
     "inStock": true,
     "images": [
       "/images/products/filter-mercury-4stroke.jpg"
-    ]
+    ],
+    "categoryId": "oljefilter"
   }
 ]

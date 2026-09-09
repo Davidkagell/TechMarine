@@ -1,5 +1,12 @@
 import catalog from "@/data/products.json";
 import type { Locale } from "@/app/messages";
+import {
+  formatCategoryPathLabel,
+  getCategoryById,
+  getChildren,
+  getDescendantCategoryIds,
+  getRootCategories,
+} from "@/lib/categories";
 import { routing } from "@/i18n/routing";
 import type { Product, ProductSearchResult } from "@/types/product";
 import {
@@ -21,6 +28,8 @@ const TYPESENSE_QUERY_BY = [
   "articleNumber",
   "category_sv",
   "category_en",
+  "category_path_sv",
+  "category_path_en",
 ].join(",");
 
 function normalizeSearchText(value: string) {
@@ -31,7 +40,15 @@ function normalizeSearchText(value: string) {
     .replace(/[,]/g, ".");
 }
 
+function productCategoryLabel(product: Product, locale: Locale) {
+  return getCategoryById(product.categoryId)?.name[locale] ?? product.categoryId;
+}
+
 function productSearchBlob(product: Product) {
+  const category = getCategoryById(product.categoryId);
+  const pathSv = formatCategoryPathLabel(product.categoryId, "sv", " ");
+  const pathEn = formatCategoryPathLabel(product.categoryId, "en", " ");
+
   return normalizeSearchText(
     [
       product.id,
@@ -39,8 +56,10 @@ function productSearchBlob(product: Product) {
       product.articleNumber,
       product.name.sv,
       product.name.en,
-      product.category.sv,
-      product.category.en,
+      category?.name.sv,
+      category?.name.en,
+      pathSv,
+      pathEn,
       product.description.sv,
       product.description.en,
     ].join(" "),
@@ -56,17 +75,53 @@ export function getProductById(id: string) {
   return products.find((product) => product.id === id);
 }
 
+export function getProductsByCategoryId(categoryId: string) {
+  const ids = new Set(getDescendantCategoryIds(categoryId));
+  return products.filter((product) => ids.has(product.categoryId));
+}
+
+export function groupProductsByRootCategory(locale: Locale) {
+  return getRootCategories()
+    .map((root) => {
+      const children = getChildren(root.id);
+      const leafGroups = children
+        .map((leaf) => ({
+          category: leaf,
+          products: products.filter(
+            (product) => product.categoryId === leaf.id,
+          ),
+        }))
+        .filter((group) => group.products.length > 0);
+
+      return {
+        root,
+        label: root.name[locale],
+        leafGroups,
+        products: leafGroups.flatMap((group) => group.products),
+      };
+    })
+    .filter((group) => group.products.length > 0);
+}
+
 export function groupProductsByCategory(locale: Locale) {
-  const groups: { category: string; products: Product[] }[] = [];
+  const groups: {
+    category: string;
+    categoryId: string;
+    products: Product[];
+  }[] = [];
   const indexByCategory = new Map<string, number>();
 
   for (const product of products) {
-    const category = product.category[locale];
-    const existingIndex = indexByCategory.get(category);
+    const label = productCategoryLabel(product, locale);
+    const existingIndex = indexByCategory.get(product.categoryId);
 
     if (existingIndex === undefined) {
-      indexByCategory.set(category, groups.length);
-      groups.push({ category, products: [product] });
+      indexByCategory.set(product.categoryId, groups.length);
+      groups.push({
+        category: label,
+        categoryId: product.categoryId,
+        products: [product],
+      });
       continue;
     }
 
@@ -114,7 +169,8 @@ function toSearchResult(
     name: product.name[locale],
     manufacturer: product.manufacturer,
     articleNumber: product.articleNumber,
-    category: product.category[locale],
+    category: productCategoryLabel(product, locale),
+    categoryPath: formatCategoryPathLabel(product.categoryId, locale),
     price: product.price,
     currency: product.currency,
     inStock: product.inStock,
@@ -133,6 +189,8 @@ function typesenseHitToResult(
     manufacturer: document.manufacturer,
     articleNumber: document.articleNumber,
     category: locale === "sv" ? document.category_sv : document.category_en,
+    categoryPath:
+      locale === "sv" ? document.category_path_sv : document.category_path_en,
     price: document.price,
     currency: document.currency,
     inStock: document.inStock,

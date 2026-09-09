@@ -29,7 +29,9 @@
     "inStock": "{count} in stock",
     "outOfStock": "Out of stock",
     "articleNumber": "{manufacturer} part no. {number}",
-    "backToProducts": "Back to products"
+    "backToProducts": "Back to products",
+    "categoryProductCount": "{count} products",
+    "categoryEmpty": "No products in this category yet."
   },
   "aboutPage": {
     "title": "About us",

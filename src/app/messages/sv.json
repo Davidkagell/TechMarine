@@ -29,7 +29,9 @@
     "inStock": "{count} st i lager",
     "outOfStock": "Slut i lager",
     "articleNumber": "{manufacturer} art.nr {number}",
-    "backToProducts": "Tillbaka till produkter"
+    "backToProducts": "Tillbaka till produkter",
+    "categoryProductCount": "{count} produkter",
+    "categoryEmpty": "Inga produkter i den här kategorin ännu."
   },
   "aboutPage": {
     "title": "Om oss",

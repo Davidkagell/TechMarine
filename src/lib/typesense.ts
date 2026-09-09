@@ -1,5 +1,10 @@
 import Typesense from "typesense";
 import type { CollectionCreateSchema } from "typesense/lib/Typesense/Collections";
+import {
+  formatCategoryPathLabel,
+  getCategoryById,
+  getCategoryChain,
+} from "@/lib/categories";
 import type { Product } from "@/types/product";
 
 export const PRODUCTS_COLLECTION = "products";
@@ -14,6 +19,9 @@ export type TypesenseProductDocument = {
   description_en: string;
   category_sv: string;
   category_en: string;
+  category_path_sv: string;
+  category_path_en: string;
+  category_ids: string[];
   price: number;
   currency: string;
   quantity: number;
@@ -31,6 +39,9 @@ export const productsCollectionSchema: CollectionCreateSchema = {
     { name: "description_en", type: "string" },
     { name: "category_sv", type: "string", facet: true },
     { name: "category_en", type: "string", facet: true },
+    { name: "category_path_sv", type: "string" },
+    { name: "category_path_en", type: "string" },
+    { name: "category_ids", type: "string[]", facet: true },
     { name: "price", type: "float" },
     { name: "currency", type: "string" },
     { name: "quantity", type: "int32" },
@@ -42,6 +53,9 @@ export const productsCollectionSchema: CollectionCreateSchema = {
 export function toTypesenseProduct(
   product: Product,
 ): TypesenseProductDocument {
+  const category = getCategoryById(product.categoryId);
+  const chain = getCategoryChain(product.categoryId);
+
   return {
     id: product.id,
     manufacturer: product.manufacturer,
@@ -50,8 +64,11 @@ export function toTypesenseProduct(
     name_en: product.name.en,
     description_sv: product.description.sv,
     description_en: product.description.en,
-    category_sv: product.category.sv,
-    category_en: product.category.en,
+    category_sv: category?.name.sv ?? product.categoryId,
+    category_en: category?.name.en ?? product.categoryId,
+    category_path_sv: formatCategoryPathLabel(product.categoryId, "sv"),
+    category_path_en: formatCategoryPathLabel(product.categoryId, "en"),
+    category_ids: chain.map((node) => node.id),
     price: product.price,
     currency: product.currency,
     quantity: product.quantity,
