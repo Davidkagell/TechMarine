@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { org } from "@/config/org";
 
 export default function Footer() {
@@ -14,11 +15,12 @@ export default function Footer() {
         <div className="max-w-md space-y-1">
           <p className="font-semibold">{name}</p>
           <p className="text-sm text-foreground/70">{description}</p>
+          <p className="pt-4 text-xs text-foreground/50">
+            {t("footer.copyright", { year, name })}
+          </p>
         </div>
+        <LocaleSwitcher />
       </div>
-      <p className="mt-6 text-xs text-foreground/50">
-        {t("footer.copyright", { year, name })}
-      </p>
     </footer>
   );
 }

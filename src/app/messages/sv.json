@@ -12,7 +12,8 @@
     "maxLength": "Max {max, plural, one {# tecken} other {# tecken}} per meddelande"
   },
   "footer": {
-    "copyright": "© {year} {name}"
+    "copyright": "© {year} {name}",
+    "languageLabel": "Språk"
   },
   "nav": {
     "start": "Start",

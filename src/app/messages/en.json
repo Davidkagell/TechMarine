@@ -12,7 +12,8 @@
     "maxLength": "Max {max, plural, one {# character} other {# characters}} per message"
   },
   "footer": {
-    "copyright": "© {year} {name}"
+    "copyright": "© {year} {name}",
+    "languageLabel": "Language"
   },
   "nav": {
     "start": "Start",
