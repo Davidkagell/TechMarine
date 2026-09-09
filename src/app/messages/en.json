@@ -9,7 +9,7 @@
     "send": "Send",
     "openChat": "Open chat",
     "closeChat": "Close chat",
-    "maxLength": "Max {max} characters per message"
+    "maxLength": "Max {max, plural, one {# character} other {# characters}} per message"
   },
   "footer": {
     "copyright": "© {year} {name}"
@@ -26,11 +26,11 @@
   },
   "productsPage": {
     "title": "Products",
-    "inStock": "{count} in stock",
+    "inStock": "{count, plural, one {# in stock} other {# in stock}}",
     "outOfStock": "Out of stock",
     "articleNumber": "{manufacturer} part no. {number}",
     "backToProducts": "Back to products",
-    "categoryProductCount": "{count} products",
+    "categoryProductCount": "{count, plural, =0 {No products} one {# product} other {# products}}",
     "categoryEmpty": "No products in this category yet."
   },
   "aboutPage": {

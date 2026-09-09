@@ -9,7 +9,7 @@
     "send": "Skicka",
     "openChat": "Öppna chatten",
     "closeChat": "Stäng chatten",
-    "maxLength": "Max {max} tecken per meddelande"
+    "maxLength": "Max {max, plural, one {# tecken} other {# tecken}} per meddelande"
   },
   "footer": {
     "copyright": "© {year} {name}"
@@ -26,11 +26,11 @@
   },
   "productsPage": {
     "title": "Produkter",
-    "inStock": "{count} st i lager",
+    "inStock": "{count, plural, one {# st i lager} other {# st i lager}}",
     "outOfStock": "Slut i lager",
     "articleNumber": "{manufacturer} art.nr {number}",
     "backToProducts": "Tillbaka till produkter",
-    "categoryProductCount": "{count} produkter",
+    "categoryProductCount": "{count, plural, =0 {Inga produkter} one {# produkt} other {# produkter}}",
     "categoryEmpty": "Inga produkter i den här kategorin ännu."
   },
   "aboutPage": {
