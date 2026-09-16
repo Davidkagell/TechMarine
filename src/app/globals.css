@@ -133,3 +133,49 @@ h2{
     animation: none;
   }
 }
+
+.category-tiles {
+  background: var(--background);
+}
+
+.category-tile {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(56, 175, 27, 0.03) 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.category-tile:hover::before {
+  opacity: 1;
+}
+
+.category-tile__arrow {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-tile:hover .category-tile__arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-tile,
+  .category-tile::before,
+  .category-tile__arrow {
+    transition: none;
+  }
+  
+  .category-tile:hover .category-tile__arrow {
+    transform: translateX(0);
+  }
+}
