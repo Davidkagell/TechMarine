@@ -138,10 +138,6 @@ h2{
   background: var(--background);
 }
 
-.category-tiles__heading {
-  font-family: var(--font-syne), var(--font-geist-sans), sans-serif;
-}
-
 .category-tile {
   position: relative;
   transition: all 0.2s ease-in-out;
