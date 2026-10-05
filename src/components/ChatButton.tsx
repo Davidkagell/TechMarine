@@ -23,7 +23,7 @@ export default function ChatButton({
       aria-expanded={ariaExpanded}
       aria-label={t("common.openChat")}
       onClick={onClick}
-      className="group relative flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-linear-to-br from-violet-400 via-purple-600 to-purple-950 text-white"
+      className="group relative flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-linear-to-br from-green-300 via-green-500 to-green-600 text-white"
     >
       <span className="pointer-events-none absolute inset-0 rounded-full bg-linear-to-b from-white/30 via-white/5 to-black/20" />
       <CircleQuestionMark

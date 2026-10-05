@@ -140,7 +140,11 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
   }
 
   function handleInputKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
-    if (event.key !== "Enter" || event.shiftKey || event.nativeEvent.isComposing) {
+    if (
+      event.key !== "Enter" ||
+      event.shiftKey ||
+      event.nativeEvent.isComposing
+    ) {
       return;
     }
 
@@ -176,7 +180,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
           className="mx-auto flex w-full max-w-2xl flex-col gap-4"
         >
           {messages.length === 0 && (
-            <div className="rounded-xl border border-dashed border-purple-400/10 bg-tech-marine-light-blue px-4 py-5 text-center text-sm text-black">
+            <div className="rounded-xl border border-dashed border-green-800 bg-tech-marine-light-blue px-4 py-5 text-center text-sm text-black">
               {t("common.empty")}
             </div>
           )}
