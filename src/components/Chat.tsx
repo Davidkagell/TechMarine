@@ -11,7 +11,7 @@ import {
   type FormEvent,
   type KeyboardEvent,
 } from "react";
-import { renderTextWithLinks } from "@/lib/chat/render-text-with-links";
+import { ChatMarkdown } from "@/components/ChatMarkdown";
 import { routing } from "@/i18n/routing";
 import { MAX_MESSAGE_LENGTH, type ChatUIMessage } from "@/types/chat";
 
@@ -180,7 +180,7 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
           className="mx-auto flex w-full max-w-2xl flex-col gap-4"
         >
           {messages.length === 0 && (
-            <div className="rounded-xl border border-dashed border-green-800 bg-tech-marine-light-blue px-4 py-5 text-center text-sm text-black">
+            <div className="rounded-xl border  border-green-800 bg-tech-marine-light-blue px-4 py-5 text-center text-sm text-black">
               {t("common.empty")}
             </div>
           )}
@@ -204,9 +204,9 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
                 className={`flex ${isUser ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                     isUser
-                      ? "bg-foreground text-background"
+                      ? "whitespace-pre-wrap bg-foreground text-background"
                       : "border border-foreground/10 bg-foreground/3 text-price-color"
                   }`}
                 >
@@ -216,7 +216,11 @@ export default function Chat({ isOpen, onClose }: ChatProps) {
                     </p>
                   )}
                   {text ? (
-                    <span>{renderTextWithLinks(text)}</span>
+                    isUser ? (
+                      text
+                    ) : (
+                      <ChatMarkdown>{text}</ChatMarkdown>
+                    )
                   ) : (
                     <span className="text-price-color/40">...</span>
                   )}

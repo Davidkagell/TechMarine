@@ -2,8 +2,8 @@
   "common": {
     "title": "Tech Marine kundtjänst",
     "empty": "Hej. Vad behöver du hjälp med idag?",
-    "assistantLabel": "Gemini",
-    "generating": "Gemini skriver...",
+    "assistantLabel": "AI-agenten",
+    "generating": "AI-Agenten skriver...",
     "placeholder": "Vad händer?",
     "stop": "Stopp",
     "send": "Skicka",
